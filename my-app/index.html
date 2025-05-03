@@ -9,6 +9,12 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      document.body.classList.add('loading');
+      window.addEventListener('load', () => {
+        document.body.classList.remove('loading');
+      });
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
